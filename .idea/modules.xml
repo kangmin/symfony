@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ACQUIA_LOCAL/D8-21/.idea/D8-21.iml" filepath="$PROJECT_DIR$/../ACQUIA_LOCAL/D8-21/.idea/D8-21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/symfony-min-site.iml" filepath="$PROJECT_DIR$/symfony-min-site.iml" />
+    </modules>
+  </component>
+</project>
