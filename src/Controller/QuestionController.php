@@ -11,14 +11,15 @@ class QuestionController extends AbstractController
 {
 
     /**
-     * @Route("/")
+     * @Route("/", name="my_homepage")
      */
     public function homepage(){
-        return new Response('What is bewitching controller we have jsut conjured!');
+       // return new Response('What is bewitching controller we have jsut conjured!');'
+        return $this->render('question/homepage.html.twig');
     }
 
     /**
-     * @Route("/questions/{wildcard}")
+     * @Route("/questions/{wildcard}",name="question_show")
      */
     public function show($wildcard){
         $answers = [
@@ -26,6 +27,7 @@ class QuestionController extends AbstractController
             "It depends on whether you are in sociology or psychology",
             "Most of the population believe that paranoid is either derogertory or pathological.",
         ];
+        dump ($this, $wildcard);
         return $this->render("question/show.html.twig", [
             'question' => ucwords(str_replace("-",' ', $wildcard )),
             'answers' => $answers,
